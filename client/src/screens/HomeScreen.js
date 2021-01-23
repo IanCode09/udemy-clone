@@ -1,14 +1,26 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 import Course from '../components/Course'
 
-import courses from '../data/courses'
 import Banner from '../components/Banner'
 import Partner from '../components/Partner'
 import Footer from '../components/Footer/Footer'
 
 const HomeScreen = () => {
+    const [courses, setCourses] = useState([])
+
+    useEffect(() => {
+        const fetchCourses = async () => {
+            const { data } = await axios.get('/api/courses')
+
+            setCourses(data)
+        }
+
+        fetchCourses()
+    }, [])
+
     return (
         <>
             <div className="container-fluid">
