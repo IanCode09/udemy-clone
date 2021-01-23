@@ -20,7 +20,7 @@ const userSchema = mongoose.Schema(
 
         isInstructor: {
             type: Boolean,
-            default: true
+            default: false
         }
     },
 
