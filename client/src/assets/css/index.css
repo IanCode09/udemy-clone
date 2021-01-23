@@ -34,6 +34,24 @@ body {
     --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))
 }
 
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    /* font-weight: 800; */
+    line-height: 1.2
+}
+
 .text-light {
     color:var(--bs-secondary);
 }
@@ -87,6 +105,7 @@ li {
     margin: 0 100px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 80px;
     border-top: 1px solid #e0e0e0;
     border-bottom: 1px solid #e0e0e0;
@@ -109,10 +128,31 @@ li {
 
 .course-image img {
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .course-name h4 {
     margin-bottom: 5px;
+}
+
+.course-rating {
+    display: flex;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.course-rating-number {
+    color: #be5a0e;
+    font-weight: bold;
+    margin-right: 6px;
+}
+
+.course-rating-reviews {
+    margin-left: 5px;
+}
+
+.course-price {
+    margin-top: 10px;
 }
 
 .partner-container {

@@ -13,23 +13,23 @@ const Partner = () => {
             </div>
 
             <div className="partner-info">
-                <div class="logo-item">
+                <div className="logo-item">
                     <img src={Partner1} alt="booking" />
                 </div>
 
-                <div class="logo-item">
+                <div className="logo-item">
                     <img src={Partner2} style={{ width: 148, height: 28 }} alt="booking" />
                 </div>
 
-                <div class="logo-item">
+                <div className="logo-item">
                     <img src={Partner3} alt="booking" />
                 </div>
 
-                <div class="logo-item">
+                <div className="logo-item">
                     <img src={Partner4} alt="booking" />
                 </div>
 
-                <div class="logo-item">
+                <div className="logo-item">
                     <img src={Partner5} alt="booking" />
                 </div>
             </div>

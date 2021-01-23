@@ -1,4 +1,5 @@
 import React from 'react'
+import Star from './Star/Star'
 
 const Course = ({ course }) => {
     return (
@@ -15,8 +16,11 @@ const Course = ({ course }) => {
                     <small className="text-light">{course.instructor}</small>
                 </div>
                 <div className="course-rating">
-                    <span>{course.rating}</span>
-                    <span>({course.numReviews})</span>
+                    <span className="course-rating-number">{course.rating}</span>
+                    <span>
+                        <Star value={course.rating} />
+                    </span>
+                    <span className="course-rating-reviews text-light">({course.numReviews})</span>
                 </div>
                 <div className="course-price">
                     <h4>Rp{course.price}</h4>
